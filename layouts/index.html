@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div class="Content">
+    <div class="CenterColumn">
+      <h1>Projects</h1>
+      <a class="PersonalSite" href="https://richard.dev">richard.dev</a>
+      <p class="Description">I build lots of random projects. Check the best ones out below.</p> 
+      <div class="Projects">
+        {{ range .Site.Params.Projects }}
+        <div class="Project">
+          <img src="{{ .ImgSource }}" />
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Description }} <a href="{{ .Link }}" target="_blank">link</a></p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

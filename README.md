@@ -1,3 +1,3 @@
 # ProjectPortfolio
 
-List of projects with links to code
+A Project Portfolio website
